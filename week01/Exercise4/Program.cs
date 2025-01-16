@@ -8,7 +8,7 @@ class Program
     {
         List<double> numbers = new List<double>();
 
-        //
+        
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
         while (true)
         {
