@@ -18,33 +18,23 @@ class Program
             if (input.ToLower() == "quit")
                 break;
 
-            scripture.HideRandomWords(3); 
+            scripture.HideRandomWords(3); // Hide 3 words per iteration
         }
     }
 }
 
 class Reference
 {
-    public string Book { get; }
-    public int Chapter { get; }
-    public int StartVerse { get; }
-    public int? EndVerse { get; }
+    public string FullReference { get; }
 
     public Reference(string reference)
     {
-        var parts = reference.Split(new char[] { ' ', ':' }, StringSplitOptions.RemoveEmptyEntries);
-        Book = parts[0];
-        Chapter = int.Parse(parts[1]);
-        StartVerse = int.Parse(parts
-        if (parts.Length > 3)
-        {
-            EndVerse = int.Parse(parts[3]);
-        }
+        FullReference = reference;
     }
 
     public override string ToString()
     {
-        return EndVerse.HasValue ? $"{Book} {Chapter}:{StartVerse}-{EndVerse}" : $"{Book} {Chapter}:{StartVerse}";
+        return FullReference;
     }
 }
 
