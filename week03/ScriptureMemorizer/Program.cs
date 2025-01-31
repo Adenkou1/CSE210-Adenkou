@@ -18,7 +18,7 @@ class Program
             if (input.ToLower() == "quit")
                 break;
 
-            scripture.HideRandomWords(3); // Hide 3 words per iteration
+            scripture.HideRandomWords(3); 
         }
     }
 }
