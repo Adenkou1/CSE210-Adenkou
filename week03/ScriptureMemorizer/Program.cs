@@ -35,7 +35,7 @@ class Reference
         var parts = reference.Split(new char[] { ' ', ':' }, StringSplitOptions.RemoveEmptyEntries);
         Book = parts[0];
         Chapter = int.Parse(parts[1]);
-        StartVerse = int.Parse(parts[2]);
+        StartVerse = int.Parse(parts
         if (parts.Length > 3)
         {
             EndVerse = int.Parse(parts[3]);
