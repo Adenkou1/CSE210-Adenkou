@@ -17,5 +17,17 @@ class Video
     public string Title { get; set;}
     public string Author {get; set;}
     public int Length { get; set;}
-    private List<Comment> comments;
+    private List<Comment> comments; 
+
+    public Video(string title, string author, int lenght)
+    {
+        Title = title;
+        Author = author;
+        Lenght = lenght;
+        comments = new List<Comment>();
+    }
+    public void AddComment(Comment comment)
+    {
+        comment.Add(comment);
+    }
 }
