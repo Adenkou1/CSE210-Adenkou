@@ -23,7 +23,7 @@ class Program
         order2.AddProduct(product3);
         order2.AddProduct(product4);
 
-        /
+        
         Console.WriteLine("Order 1:");
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
@@ -34,8 +34,8 @@ class Program
         Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine("Total Price: $" + order2.CalculateTotalCost());
     }
-}/
-m 
+}
+
 class Product
 {
     private string name;
