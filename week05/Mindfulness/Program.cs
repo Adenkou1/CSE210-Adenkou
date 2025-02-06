@@ -18,9 +18,15 @@ public class Activity
 
     public void StartActivity()
     {
-        Console.WriteLine("Starting " + name + "...");
-        Thread.Sleep(duration * 1000);
-        Console.WriteLine(name + " is done!");
-    }
-
+        Console.WriteLine($"\n{name}");
+        Console.WriteLine(description);
+        Console.WriteLine("Enter duration (in seconds)");
+        duration = int.Parse(Console.ReadLine());
+        Console.WriteLine("Prepare to begin...");
+        ShowSpinner(3);
 }
+
+    public void EndActivity()
+    {
+        C
+    }
